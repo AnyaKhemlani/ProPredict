@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="AlzStylesheet.css" />
+</head>
+<body>
+  <div id="myNavbar">
+    <ul>
+      <li><a href="Home.html">ProPredict</a></li>
+      <li><a class="active" href="AlzPredict.html">AlzPredict</a></li>
+      <!-- <li><a href="ExampleResults.html">Example Results</a></li> -->
+      <div class="topnav-right">
+              <li><img src="images/ProPredictlogoWhite.png" alt="ProPredict logo" style="height:40px;"></li>
+      </div>
+    </ul>
+  </div>
+<div id ="body2">
+  <div class="header">
+  <img src="images/AlzPredict logo.png" alt="AlzPredict logo" style="width:50vw">
+</div>
+<div class="row">
+  <!-- <div class="leftcolumn"> -->
+  	<button type="button" class="collapsible">What is AlzPredict?</button>
+<div class="content">
+  <p>Answer here</p>
+</div>
+<p></p>
+<button type="button" class="collapsible">Who would take the test?</button>
+<div class="content">
+  <p>Answer here</p>
+</div>
+<p></p>
+<button type="button" class="collapsible">How was AlzPredict developed?</button>
+<div class="content">
+  <p>Answer here</p>
+</div>
+<p></p>
+<button type="button" class="collapsible">How is patient data protected?</button>
+<div class="content">
+  <p>Answer here</p>
+</div>
+<p></p>
+<button type="button" class="collapsible">What would my results look like?</button>
+<div class="content">
+  <p>We can put an image here of what the results would look like!</p>
+</div>
+
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeq");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</div>
+</div>
+</body>
+</html>
