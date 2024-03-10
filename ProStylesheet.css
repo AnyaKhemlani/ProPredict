@@ -96,18 +96,18 @@ body {
   content: '+';
   color: #E4F2F2;
   font-size: 25px;
-  color: white;
+  color: black;
   float: right;
   margin-left: 5px;
 }
 
 .activeq:after {
   content: "-";
-  color: #aec9f6;
+  color: #DAC7FF;
 }
 
 .collapsible {
-  background-color: #aec9f6;
+  background-color: #DAC7FF;
   color: #000000;
   cursor: pointer;
   padding: 18px;
@@ -119,11 +119,11 @@ body {
 }
 
 .active{
-  background-color: #0f54c8;
+  background-color: #6a1691;
   color: #E4F2F2;
 }
 .collapsible:hover {
-  background-color: #0f54c8;
+  background-color: #4B0D66;
   color: #E4F2F2;
 }
 
