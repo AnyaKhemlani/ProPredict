@@ -6,7 +6,7 @@
 <body>
   <div id="myNavbar">
     <ul>
-      <li><a href="Home.html">ProPredict</a></li>
+      <li><a href="index.html">ProPredict</a></li>
       <li><a href="AlzPredict.html">AlzPredict</a></li>
       <li><a class="active" href="ExamplePortal.html">Nancy's Results</a></li>
       <div class="topnav-right">
@@ -17,20 +17,38 @@
 <div id ="body2">
   <div class="header">
   <img src="images/nancy.png" alt="ProPredict logo" style="width:30vh">
+  <p style="text-align: center;"> Welcome to your ProPredict patient portal, Nancy</p>
 </div>
+
 <div class="row">
-    <div class="card">
-      <h1>March 6th AlzPredict test results:</h1>
-      <h5>Uploaded March 10, 2024</h5>
-      <p>-</p>
-      <H3>Your test results show that you have a 23% chance of developing Alzheimers</H3>
+  <button type="button" class="collapsible">March 6th AlzPredict test results:</button>
+    <div class="content">
+     <H3>Your test results show that you have a 63% chance of developing Alzheimers</H3>
       <p>-</p>
       <p></p>
       <H2>Here's what to do now:</H2>
       <p> - Talk to your endocrinologist about your results</p>
       <p> - Consider meeting with a neurologist to understand your results</p>
+      <p> - Consider meeting with a neurologist to understand your results</p>
   </div>
 </div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("activeq");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
 </div>
 </body>
 </html>
